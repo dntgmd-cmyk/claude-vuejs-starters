@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/98.workspace/work_claude/**)",
+      "Bash(dir \"D:\\\\98.workspace\\\\work_claude\")",
+      "PowerShell(Get-ChildItem \"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\" -Exclude \"node_modules\" -Recurse | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\" -Recurse | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\" -Exclude \"node_modules\", \".next\" -Recurse | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\\\\\", \"\"\\) })",
+      "PowerShell(Get-ChildItem \"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\\\\components\" -Recurse | ForEach-Object { $_.FullName.Replace\\(\"D:\\\\98.workspace\\\\work_claude\\\\claude-nextjs-starters\\\\\", \"\"\\) })",
+      "Bash(Remove-Item -Force \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\vite.config.js\" -ErrorAction SilentlyContinue)",
+      "Bash(Remove-Item -Force \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\src\\\\main.ts\" -ErrorAction SilentlyContinue)",
+      "Bash(Remove-Item -Force \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\src\\\\lib\\\\utils.ts\" -ErrorAction SilentlyContinue)",
+      "Bash(Remove-Item -Force \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\src\\\\lib\\\\constants.ts\" -ErrorAction SilentlyContinue)",
+      "Bash(Remove-Item -Force \"D:\\\\98.workspace\\\\work_claude\\\\claude-vuejs-starters\\\\src\\\\stores\\\\theme.ts\" -ErrorAction SilentlyContinue)",
+      "Bash(claude mcp *)",
+      "Bash(npm run *)",
+      "Bash(Start-Sleep -Seconds 4)",
+      "Bash(Write-Host \"done\")"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright"
+  ]
+}
