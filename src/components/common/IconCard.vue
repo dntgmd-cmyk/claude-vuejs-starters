@@ -1,16 +1,7 @@
 <script setup>
+import { Zap } from '@lucide/vue'
 import { Card, CardContent } from '@/components/ui/card'
-import {
-  Zap, Palette, Moon, Shield, Smartphone, GitBranch,
-  BarChart3, Users, Settings, Bell, FileText, HelpCircle,
-} from '@lucide/vue'
-
-const iconMap = {
-  zap: Zap, palette: Palette, moon: Moon, shield: Shield,
-  smartphone: Smartphone, 'git-branch': GitBranch, 'bar-chart-3': BarChart3,
-  users: Users, settings: Settings, bell: Bell, 'file-text': FileText,
-  'help-circle': HelpCircle,
-}
+import { iconMap } from '@/lib/icons'
 
 defineProps({
   icon: String,

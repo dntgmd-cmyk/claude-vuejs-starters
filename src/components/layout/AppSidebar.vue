@@ -70,6 +70,7 @@ const mobileOpen = ref(false)
       <div
         v-if="mobileOpen"
         class="fixed inset-0 z-40 bg-black/50"
+        aria-hidden="true"
         @click="mobileOpen = false"
       />
     </Transition>
@@ -82,7 +83,11 @@ const mobileOpen = ref(false)
     >
       <aside
         v-if="mobileOpen"
+        role="dialog"
+        aria-modal="true"
+        aria-label="내비게이션 메뉴"
         class="fixed inset-y-0 left-0 z-50 flex w-72 flex-col border-r bg-sidebar"
+        @keydown.esc="mobileOpen = false"
       >
         <div class="flex h-14 items-center border-b px-4">
           <RouterLink to="/" class="flex items-center gap-2" @click="mobileOpen = false">

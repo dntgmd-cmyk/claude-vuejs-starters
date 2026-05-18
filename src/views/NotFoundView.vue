@@ -1,7 +1,9 @@
 <script setup>
-import { RouterLink } from 'vue-router'
+import { useRouter, RouterLink } from 'vue-router'
 import { ArrowLeft, Home } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
+
+const router = useRouter()
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import { Button } from '@/components/ui/button'
       <p class="text-muted-foreground">요청하신 페이지가 존재하지 않거나 이동되었습니다.</p>
     </div>
     <div class="flex items-center gap-3">
-      <Button variant="outline" @click="$router.back()">
+      <Button variant="outline" @click="router.back()">
         <ArrowLeft class="mr-2 size-4" />
         이전 페이지
       </Button>

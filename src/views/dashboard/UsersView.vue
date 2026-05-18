@@ -8,7 +8,7 @@ import PageHeader from '@/components/common/PageHeader.vue'
 
 const search = ref('')
 const loading = ref(false)
-const pagination = ref({ sortBy: 'name', descending: false, page: 1, rowsPerPage: 10, rowsNumber: 0 })
+const pagination = ref({ sortBy: 'name', descending: false, page: 1, rowsPerPage: 10 })
 
 const columns = [
   { name: 'id', label: '#', field: 'id', sortable: true, align: 'left' },
@@ -37,9 +37,9 @@ const planVariant = {
 }
 
 const statusColor = {
-  active: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400',
-  inactive: 'bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400',
-  pending: 'bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400',
+  active: 'bg-success/10 text-success',
+  inactive: 'bg-muted text-muted-foreground',
+  pending: 'bg-warning/10 text-warning',
 }
 
 const statusLabel = {

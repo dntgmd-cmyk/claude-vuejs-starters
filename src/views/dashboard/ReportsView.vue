@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import { Download, Plus, FileText } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -15,7 +14,7 @@ const reports = [
   { id: 5, name: '매출 트렌드 분석', type: '커스텀', status: 'ready', size: '1.8 MB', date: '2025-05-10' },
 ]
 
-const storageUsed = ref(67)
+const storageUsed = 67
 </script>
 
 <template>

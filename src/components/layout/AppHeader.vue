@@ -1,13 +1,16 @@
 <script setup>
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { ref, watch } from 'vue'
+import { RouterLink, useRoute } from 'vue-router'
 import { Menu, X } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { NAV_LINKS } from '@/lib/constants'
 import ThemeToggle from './ThemeToggle.vue'
 
+const route = useRoute()
 const mobileOpen = ref(false)
+
+watch(() => route.path, () => { mobileOpen.value = false })
 </script>
 
 <template>

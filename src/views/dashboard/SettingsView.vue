@@ -60,17 +60,17 @@ const notificationItems = [
           <CardContent class="space-y-4">
             <div class="grid gap-4 sm:grid-cols-2">
               <div class="space-y-2">
-                <label class="text-sm font-medium">이름</label>
-                <Input v-model="profile.name" />
+                <label for="settings-name" class="text-sm font-medium">이름</label>
+                <Input id="settings-name" v-model="profile.name" />
               </div>
               <div class="space-y-2">
-                <label class="text-sm font-medium">회사</label>
-                <Input v-model="profile.company" />
+                <label for="settings-company" class="text-sm font-medium">회사</label>
+                <Input id="settings-company" v-model="profile.company" />
               </div>
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-medium">이메일</label>
-              <Input v-model="profile.email" type="email" />
+              <label for="settings-email" class="text-sm font-medium">이메일</label>
+              <Input id="settings-email" v-model="profile.email" type="email" />
             </div>
             <Separator />
             <div class="flex justify-end">
@@ -145,16 +145,16 @@ const notificationItems = [
           </CardHeader>
           <CardContent class="space-y-4">
             <div class="space-y-2">
-              <label class="text-sm font-medium">현재 비밀번호</label>
-              <Input type="password" placeholder="현재 비밀번호 입력" />
+              <label for="settings-current-pw" class="text-sm font-medium">현재 비밀번호</label>
+              <Input id="settings-current-pw" type="password" placeholder="현재 비밀번호 입력" />
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-medium">새 비밀번호</label>
-              <Input type="password" placeholder="새 비밀번호 입력" />
+              <label for="settings-new-pw" class="text-sm font-medium">새 비밀번호</label>
+              <Input id="settings-new-pw" type="password" placeholder="새 비밀번호 입력" />
             </div>
             <div class="space-y-2">
-              <label class="text-sm font-medium">새 비밀번호 확인</label>
-              <Input type="password" placeholder="새 비밀번호 다시 입력" />
+              <label for="settings-confirm-pw" class="text-sm font-medium">새 비밀번호 확인</label>
+              <Input id="settings-confirm-pw" type="password" placeholder="새 비밀번호 다시 입력" />
             </div>
             <Separator />
             <div class="flex justify-end">

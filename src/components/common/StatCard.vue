@@ -18,9 +18,9 @@ defineProps({
     <CardContent>
       <p class="text-2xl font-bold">{{ value }}</p>
       <div v-if="trend" class="mt-1 flex items-center gap-1 text-xs">
-        <TrendingUp v-if="positive" class="size-3 text-green-500" />
-        <TrendingDown v-else class="size-3 text-red-500" />
-        <span :class="positive ? 'text-green-600' : 'text-red-600'">{{ trend }}</span>
+        <TrendingUp v-if="positive" class="size-3 text-success" />
+        <TrendingDown v-else class="size-3 text-destructive" />
+        <span :class="positive ? 'text-success' : 'text-destructive'">{{ trend }}</span>
       </div>
     </CardContent>
   </Card>

@@ -2,25 +2,12 @@
 import { useRoute, RouterLink } from 'vue-router'
 import { Badge } from '@/components/ui/badge'
 import { SIDEBAR_LINKS } from '@/lib/constants'
+import { iconMap } from '@/lib/icons'
 import { cn } from '@/lib/utils'
-import {
-  LayoutDashboard, BarChart3, Users, FileText,
-  Bell, Settings, HelpCircle,
-} from '@lucide/vue'
 
 defineProps({ collapsed: Boolean })
 
 const route = useRoute()
-
-const iconMap = {
-  'layout-dashboard': LayoutDashboard,
-  'bar-chart-3': BarChart3,
-  'users': Users,
-  'file-text': FileText,
-  'bell': Bell,
-  'settings': Settings,
-  'help-circle': HelpCircle,
-}
 </script>
 
 <template>

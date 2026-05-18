@@ -49,15 +49,15 @@ function markAllRead() {
 }
 
 function markRead(id) {
-  const n = notifications.value.find(n => n.id === id)
-  if (n) n.read = true
+  const item = notifications.value.find(notif => notif.id === id)
+  if (item) item.read = true
 }
 
 const typeColor = {
-  user: 'bg-blue-100 text-blue-600',
-  payment: 'bg-green-100 text-green-600',
-  report: 'bg-purple-100 text-purple-600',
-  system: 'bg-orange-100 text-orange-600',
+  user: 'bg-info/10 text-info',
+  payment: 'bg-success/10 text-success',
+  report: 'bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400',
+  system: 'bg-warning/10 text-warning',
 }
 </script>
 
