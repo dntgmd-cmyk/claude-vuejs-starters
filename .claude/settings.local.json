@@ -15,7 +15,9 @@
       "Bash(claude mcp *)",
       "Bash(npm run *)",
       "Bash(Start-Sleep -Seconds 4)",
-      "Bash(Write-Host \"done\")"
+      "Bash(Write-Host \"done\")",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   },
   "enableAllProjectMcpServers": true,
